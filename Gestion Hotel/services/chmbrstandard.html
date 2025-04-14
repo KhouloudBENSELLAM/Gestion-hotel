@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chambre standard</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        .nav-item{
+            margin-left: 6%;
+        }
+        ul{
+            margin-left: -8%;
+        }
+        #img1{
+            width: 250px;
+            height: 80px;
+        }
+        div{
+            margin-left: 40%;
+        }
+        header li a:hover{
+            background-color: rgb(184, 156, 0);
+            border-radius: 10px;
+        }
+        #reserve{
+            border: 2px solid;
+            background-color: goldenrod;
+            color: black;
+            border-radius: 15px;
+        }
+        .display-4{
+            margin-left: 50px;
+            letter-spacing: 5px;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            max-width: 100%;
+            height: 250px;
+        }
+        .slider-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            height: 450px;
+            overflow: hidden;
+            left: -230px;
+        }
+        .menu {
+            position: absolute;
+            left: -380px;
+            z-index: 11;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+        .menu label {
+            cursor: pointer;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50px;
+            margin: 0 0.2em 1em;
+        }
+        .menu label:hover,.menu label:focus {
+            background: #1c87c9;
+        }
+        .slide-input{
+            opacity: 0;
+        }
+        .slide-img {
+            width: 90%;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            z-index: 10;
+            transition: left 0s 0.75s;
+        }
+        [id^="slide"]:checked + .slide-img {
+            left: 0;
+            z-index: 100;
+            transition: left 0.65s ease-out;
+        }
+        #div2{
+            position: relative;
+            left: 250px;
+            bottom: 450px;
+            width: 40%;
+        }
+        #input:hover{
+            background-color: white;
+            color: rgb(248, 162, 3);
+        }
+        #input{
+            background-color: rgb(243, 159, 3);
+            color: white;
+            width: 160px;
+            height: 50px;
+        }
+        #div3{
+            position: relative;
+            left: 200px;
+            bottom: 400px;
+        }
+        main{
+            background-color: rgb(54, 54, 54);
+        }
+        #div4{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 90px;
+            padding: 10px;
+            margin-right: 90px;
+        }
+        footer{
+            background-color: black;
+        }
+        #div5{
+            position: absolute;
+            bottom: 0px;
+            color: antiquewhite;
+            right: 380px;
+        }
+        @media screen and (min-width: 200px) and (max-width: 800px) {
+            .slider-container{
+                position: relative;
+                left: 30px;
+            }
+            #div2{
+                position: relative;
+                top: 50px;
+                left: -170px;
+            }
+            #input{
+                position: relative;
+                top: 300px;
+                left: -200px;
+            }
+            
+            #div5{
+                position: relative;
+                bottom: 250px;
+                right: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="justify-content-center" id="div1" style="background-color: white;"><a href="index.html"><img id="img1" src="LOGO1.jpg" alt=""></a></div>
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Acceuil</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="chambre.html" class="nav-link">Chambres</a></li>
+                    <li class="nav-item"><a href="activité.html" class="nav-link">Activités</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br><br>
+        <br><br><br>
+        <br>
+        <h1 class="display-4 text-warning" id="NOS CHAMBRES">CHAMBRE STANDARD</h1>
+        <br>
+        <section>
+            <div class="slider-container">
+                <div class="menu">
+                    <label for="slide-dot-1"></label>
+                    <label for="slide-dot-2"></label>
+                    
+                </div>
+    
+                <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                <img class="slide-img" src="standard.webp">
+    
+                <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                <img class="slide-img" src="salle-de-bains-chambre-standard-standard.jpg">
+    
+            </div>
+            <div id="div2">
+                <p class="fs-5 text-light">Nos chambres Standard offrent un équilibre parfait entre confort et fonctionnalité. Élégamment décorées, elles sont équipées de toutes les commodités nécessaires pour rendre votre séjour agréable. Idéales pour les voyageurs en quête de confort à un prix raisonnable.</p>
+            </div>
+            <div class="d-flex">
+                <div id="div3">
+                    <a href="form login.html"><input type="button" value="Réserver" id="input"></a>
+                </div>
+                <div id="div5">
+                    <h6>A partir de</h6>
+                    <h2>800 DH</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div id="div4">
+            <a href="" class="nav-link" style="color: white;">Mention légales</a>
+            <a href="" class="nav-link" style="color: white;">Politique en matière de cookies</a>
+            <a href="" class="nav-link" style="color: white;">Politique de confidentialité</a>
+            <a href="" class="nav-link" style="color: white;">Conditions d'utilisation</a>
+        </div>
+        <div style="color: white; justify-content: center;">
+            &copy;2023 par Dolce Vita Hotel.</div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODE PAIMENT</title>
+    
+    <style>
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        legend{
+            text-align: center;
+            background-color: goldenrod;
+        }
+        form{
+            margin-left: 35%;
+            margin-top: 200px;
+        }
+        #PAYER{
+            border: 2px solid rgb(33, 142, 33);
+            border-radius: 45%;
+            color: white;
+            background-color: rgb(33, 142, 33);
+            width: 105px;
+            height: 35px;
+            margin-left: 36%;
+        }
+        @media (max-width: 400px){
+            form{
+                margin-left: 24%;
+                width: 100%;
+            }
+            #PAYER{
+                margin-left: 13%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 40%;">
+          <legend >. MODE DE PAIEMENT  .</legend>
+            <img src="save-money.png" alt=""><input type="radio" value="espèces" name="paiment">
+            <label for="paiment">Espèces</label>&nbsp;<input type="text" name="" id="" mute pattern="[A-Za-z]*" placeholder="VOTRE TOTAL 100DH" disabled>
+            <br>
+            <br>
+            <img src="carte-de-credit.png" alt=""><input type="radio" value="carte_bancaire" name="paiment">
+            <label for="paiment">Carte bancaire</label>&nbsp;<input type="text" placeholder="xxxx-xxxx-xxxx" pattern="\d{6}">
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="PAYER" id="PAYER">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

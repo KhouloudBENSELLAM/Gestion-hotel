@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chambres</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        .nav-item{
+            margin-left: 6%;
+        }
+        ul{
+            margin-left: -13%;
+        }
+        img{
+            width: 250px;
+            height: 80px;
+        }
+        div{
+            margin-left: 40%;
+        }
+        header li a:hover{
+            background-color: rgb(184, 156, 0);
+            border-radius: 10px;
+        }
+        .display-3{
+            margin-left: 50px;
+        }
+        #hr{
+            margin-bottom: 5px;
+            width: 85%;
+            margin-left: 50px;
+            border: 1px solid ;
+            color: rgb(199, 149, 23) ;
+            width: 90%;
+        }
+        #reserve{
+            border: 2px solid;
+            background-color: goldenrod;
+            color: black;
+            border-radius: 15px;
+        }
+        article section img{
+            width: 350px;
+            height: 250px;
+            margin-left: 50px;
+            border: 1px rgb(85, 85, 85) solid;
+            padding: 5px;
+        }
+        #div1{
+            background-color: white;
+        }
+        article{
+            display: flex;
+        }
+        .ul1{
+            list-style-position: outside;
+            margin-left: 5px;
+        }
+        #hr1{
+            margin-left: 10px;
+            width: 110%;
+        }
+        .sectionmedia{
+            margin-left: 20px;
+        }
+        .sectionmedia1{
+            margin-left: 20px;
+        }
+        .sectionmedia2{
+            margin-left: 20px;
+        }
+        #a1:hover{
+            transform: scale(1.5);
+        }
+        .image{
+            width: 40px;
+            height: 40px;
+            border: none;
+            margin-right: -20px;
+        }
+        #div2{
+            display: flex;
+            margin-left: -35px;
+        }
+        #section2{
+            margin-left: 115px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #input{
+            background-color: black;
+            color: white;
+            width: 160px;
+            height: 50px;
+        }
+        .imaage2{
+            margin-top: 30px;
+        }
+        .imaage3{
+            margin-top: 30px;
+        }
+        #section4{
+            margin-left: 40px;
+            text-align: center;
+            margin-top: 90px;
+        }
+        #section5{
+            margin-left: -160px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #input1{
+            background-color: goldenrod;
+            color: white;
+            width: 160px;
+            height: 50px;
+            margin-left: 1120px;
+            margin-top: 200px;
+        }
+        #input:hover{
+            background-color: white;
+            color: black;
+        }
+        footer{
+            background-color: black;
+        }
+        #div3{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 90px;
+            padding: 10px;
+            margin-right: 90px;
+        }
+        #div4{
+            margin-left: 75px;
+            margin-top: 30px;
+        }
+        #p1{
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        @media screen and (min-width: 200px) and (max-width: 400px) {
+            #section6{
+                position: relative;
+            }
+            .sectionmedia{
+                position: relative;
+                top: 300px;
+                margin-left: -340px;
+            }
+            #section2{
+                position: relative;
+                top: 500px;
+                margin-left: -570px;
+            }
+            .hrmedia{
+                position: relative;
+                top: 500px;
+            }
+            .imaage2{
+                position: relative;
+                top: 500px;
+            }
+            footer{
+                position: relative;
+                top: 2000px;
+            }
+            .sectionmedia1{
+                position: relative;
+                top: 780px;
+                margin-left: -340px;
+            }
+            .imaage3{
+                position: relative;
+                top: 1000px;
+            }
+            .hrmedia1{
+                position: relative;
+                top: 980px;
+            }
+            .hrmedia2{
+                position: relative;
+                top: 1430px;
+            }
+            #section4{
+                position: relative;
+                top: 1000px;
+                margin-left: -640px;
+            }
+            .sectionmedia2{
+                position: relative;
+                top: 1280px;
+                margin-left: -340px;
+            }
+            #section5{
+                position: relative;
+                top: 1530px;
+                margin-left: -840px;
+            }
+            #input1{
+                position: relative;
+                margin-left: 80px;
+                top: 1500px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="justify-content-center" id="div1" style="background-color: white;"><a href="index.html"><img src="LOGO1.jpg" alt=""></a></div>
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Acceuil</a></li>
+                    <li class="nav-item"><a href="sevices.html" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="chambre.html" class="nav-link">Chambres</a></li>
+                    <li class="nav-item"><a href="activité.html" class="nav-link">Activités</a></li>
+                    <li class="nav-item"><a href="form login.html" id="reserve" class="nav-link">Réserver</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br><br>
+        <br><br><br>
+        <br>
+        <h1 class="display-3" id="NOS CHAMBRES">NOS CHAMBRES</h1>
+        <h3 style="margin-left: 75px; font-weight: 600; word-spacing: 5px; color: black;">Découvrez le Confort et l'Élégance de Nos Chambres..</h3>
+        <div id="div4">
+            <p id="p1">Bienvenue dans notre oasis de détente, où le luxe et le confort se rencontrent pour créer une expérience inoubliable. Nos chambres soigneusement conçues allient charme moderne et touches classiques, offrant un refuge chaleureux pour les voyageurs exigeants.</p>
+        </div>
+        <hr id="hr">
+        <br><br><br>
+        <hr id="hr">
+        <br>
+        <article>
+            <section id="section6">
+                <a href=""><img src="chambre standar.webp" alt="" id="a1"></a>
+            </section>
+            <section id="section1" class="sectionmedia">
+                <h3>Chambre Standard</h3>
+                <p>Nos chambres Standard offrent un équilibre parfait entre confort et fonctionnalité.</p>
+                <br>
+                <ul class="ul1">
+                    <li>Taille: 230 ft2</li>
+                    <li>Lits: 1 Lit(s) Double(s)</li>
+                </ul>
+                <hr id="hr1">
+                <div id="div2">
+                    <a href=""><img src="climatiseur.png" alt="" class="image"></a>
+                    <a href=""><img src="wifi.png" alt="" class="image"></a>
+                    <a href=""><img src="television.png" alt="" class="image"></a>
+                    <a href=""><img src="refrigerateur.png" alt="" class="image"></a>
+                    <a href=""><img src="ustensiles-de-cuisine.png" alt="" class="image"></a>
+                    <a href=""><img src="hotel-bell.png" alt="" class="image"></a>
+                </div>
+            </section>
+            <section id="section2">
+                <h6 style="font-weight: lighter;">A partir de</h6>
+                <h2 style="font-weight: normal; margin-bottom: 20px;">800 DH</h2>
+                <a href="chmbrstandard.html"><input type="button" value="Plus d'info" id="input"></a>
+            </section>
+        </article>
+        <br>
+        <hr id="hr" class="hrmedia">
+        <article>
+            <section id="section3" class="imaage2">
+                <a href=""><img src="chambre deluxe.webp" alt="" id="a1"></a>
+            </section>
+            <section id="section1" style="margin-top: 30px;" class="sectionmedia1">
+                <h3>Chambre Deluxe</h3>
+                <p>Plongez dans le luxe avec nos chambres Deluxe, conçues pour surpasser vos attentes<br>les plus élevées.</p>
+                <br>
+                <ul class="ul1">
+                    <li>Taille: 260 ft2</li>
+                    <li>Lits: 2 Lit(s) Double(s)</li>
+                </ul>
+                <hr id="hr1" style="width: 650px;">
+                <div id="div2">
+                    <a href=""><img src="climatiseur.png" alt="" class="image"></a>
+                    <a href=""><img src="wifi.png" alt="" class="image"></a>
+                    <a href=""><img src="television.png" alt="" class="image"></a>
+                    <a href=""><img src="refrigerateur.png" alt="" class="image"></a>
+                    <a href=""><img src="ustensiles-de-cuisine.png" alt="" class="image"></a>
+                    <a href=""><img src="hotel-bell.png" alt="" class="image"></a>
+                    <a href=""><img src="serviette.png" alt="" class="image"></a>
+                    <a href=""><img src="service-de-chambre.png" alt="" class="image"></a>
+                </div>
+            </section>
+            <section id="section4">
+                <h6 style="font-weight: lighter;">A partir de</h6>
+                <h2 style="font-weight: normal; margin-bottom: 20px;">2,000 DH</h2>
+                <a href="chambreluxe.html"><input type="button" value="Plus d'info" id="input"></a>
+            </section>
+        </article>
+        <br>
+        <hr id="hr" class="hrmedia1">
+        <article>
+            <section id="section3" class="imaage3">
+                <a href=""><img src="suite.webp" alt="" id="a1"></a>
+            </section>
+            <section id="section1" style="margin-top: 30px;" class="sectionmedia2">
+                <h3>Suite Prestige</h3>
+                <p>Les Suites Prestige offrent un espace généreux et un raffinement exceptionnel.</p>
+                <br>
+                <ul class="ul1">
+                    <li>Taille: 280 ft2</li>
+                    <li>Lits: 1 Lit(s) King Size</li>
+                </ul>
+                <hr id="hr1" style="width: 850px;">
+                <div id="div2">
+                    <a href=""><img src="climatiseur.png" alt="" class="image"></a>
+                    <a href=""><img src="wifi.png" alt="" class="image"></a>
+                    <a href=""><img src="television.png" alt="" class="image"></a>
+                    <a href=""><img src="refrigerateur.png" alt="" class="image"></a>
+                    <a href=""><img src="ustensiles-de-cuisine.png" alt="" class="image"></a>
+                    <a href=""><img src="hotel-bell.png" alt="" class="image"></a>
+                    <a href=""><img src="serviette.png" alt="" class="image"></a>
+                    <a href=""><img src="service-de-chambre.png" alt="" class="image"></a>
+                    <a href=""><img src="douche.png" alt="" class="image"></a>
+                    <a href=""><img src="sofa.png" alt="" class="image"></a>
+                    <a href=""><img src="articles-de-toilette.png" alt="" class="image"></a>
+                    <a href=""><img src="chaise-de-bureau.png" alt="" class="image"></a>
+                </div>
+            </section>
+            <section id="section5">
+                <h6 style="font-weight: lighter;">A partir de</h6>
+                <h2 style="font-weight: normal; margin-bottom: 20px;">8,000 DH</h2>
+                <a href="suite.html"><input type="button" value="Plus d'info" id="input"></a>
+            </section>
+        </article>
+        <br>
+        <hr id="hr" class="hrmedia2">
+        <a href=""><input type="button" value="Haut de page" id="input1"></a>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+    </main>
+    <footer>
+        <div id="div3">
+            <a href="" class="nav-link" style="color: white;">Mention légales</a>
+            <a href="" class="nav-link" style="color: white;">Politique en matière de cookies</a>
+            <a href="" class="nav-link" style="color: white;">Politique de confidentialité</a>
+            <a href="" class="nav-link" style="color: white;">Conditions d'utilisation</a>
+        </div>
+        <div style="color: white; justify-content: center;">
+            &copy;2023 par Dolce Vita Hotel.</div>
+    </footer>
+</body>
+</html>
+
+
+
+
+

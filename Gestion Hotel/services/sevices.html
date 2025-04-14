@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page services</title>
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #reserve{
+        border: 2px solid ;
+        background-color: goldenrod;
+        color: black;
+        border-radius: 10px;
+    
+    }
+    .nav-item{
+        margin-left: 8%;
+    }
+
+    ul{
+        margin-left: 12%;
+    }
+    header div img{
+        width: 200px;
+        height: 80px;
+        margin-top: 0;
+    }
+    div{
+        margin-left: 40%;
+    }
+    a:active:not(#reserve){
+        color: white;
+        text-decoration: underline;
+
+    }
+    .conteneur{
+        padding: 2rem;
+        margin-left: -38%;
+    }
+    .slider-wrapper{
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+        
+    }
+    .slider{
+        display: flex;
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem --0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 0.5rem;
+        width: 100%;
+        margin-left: 52%;
+        margin-right: 5%;
+        height: 500px;
+        overflow-x: hidden;
+        overflow-y:hidden;
+    }
+    .slider img{
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        
+    }
+    .slider-nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 4rem;
+        left: 29%;
+        transform: translateX(-50%);
+        z-index: 1;
+       
+    
+        
+    }
+    .slider-nav a{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: goldenrod;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+        margin-left: -36%;
+        margin-right: 3%;
+        margin-bottom: -70px;
+       
+        
+    }
+    hr{
+        border-top: 3px solid goldenrod;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1{
+        margin-left: 40%;
+        font-weight: lighter;
+    }
+    h3{
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 35.5%;
+        border-bottom: 2px solid;
+        margin-right: 35.4%;
+        margin-top: 10px;
+    }
+    #h3{
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 43%;
+        border-bottom: 2px solid;
+        margin-right: 41.6%;
+    }
+    .breakfast{
+        display: flex;
+        margin-left: -20%;
+        flex-wrap: wrap;
+        margin-left: 4%;
+    }
+    .breakfast div {
+        margin-left: 5%;
+        margin-top: 20px;
+    
+    }
+    .breakfast div img {
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-bottom: 29px;
+    }
+    .breakfast div img:hover{
+        transform: scale(2);
+    }
+    .conteneur1{
+        border: 2PX solid black;
+        margin-top: -75px;
+        background-color: goldenrod;
+        margin-right: 23%;
+        margin-left: 30%;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-bottom: 90px;
+        width: 50%;
+    }
+    .Dinner{
+        display: flex;
+        margin-left: -30%;
+        flex-wrap: wrap;
+        margin-left: 4%;
+    }
+    .Dinner div {
+        margin-left: 5%;
+        margin-top: 20px;
+    
+    }
+    .Dinner div img {
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-bottom: 29px;
+    }
+    .Dinner div img:hover{
+        transform: scale(2);
+    }
+   
+    .CHAUDES{
+        display: flex;
+        margin-left: 10%;
+        flex-wrap: wrap;
+        margin-left: 3%;
+    }
+    .CHAUDES div {
+        margin-left: 5%;
+        margin-top: 30px;
+    
+    }
+    .CHAUDES div img {
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-bottom: 29px;
+    }
+    .CHAUDES div img:hover{
+        transform: scale(1.8);
+    }
+    .CHAUDES_boisons{
+        border: 2PX solid black;
+        margin-top: -800px;
+        background-color: goldenrod;
+        margin-right: 40%;
+        margin-left: 8%;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-bottom: 90px;
+        width: 50%;
+    }
+    h4{
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 33%;
+        border-bottom: 2px solid;
+        margin-right: 35%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 34%;
+    }
+    h5{
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 33%;
+        border-bottom: 2px solid;
+        margin-right: 37%;
+        margin-top: 20px;
+        width: 33%;
+        margin-bottom: 10px;
+    }
+    .FROIDES{
+        display: flex;
+        margin-left: 10%;
+        flex-wrap: wrap;
+        margin-left: 3%;
+    }
+    .FROIDES div {
+        margin-left: 5%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    
+    }
+    .FROIDES div img {
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-bottom: 29px;
+    }
+    .FROIDES div img:hover{
+        transform: scale(1.8);
+    }
+    #voir_plus{
+        margin-top: 20px;
+        margin-left: 35%;
+        text-decoration: none;
+        border: 2px solid;
+        background-color: black;
+        color: goldenrod;
+        font-size: 22px;
+        border-radius: 15px;
+        padding: 1%;
+    }
+    @media (max-width: 400px) {
+        .slider img{ 
+            width: 100%;
+        
+            
+        }
+        .slider{
+            width: 80%;
+        }
+        .slider-nav a {
+            margin-left: 28%;
+            margin-right: -25%;
+            margin-top: -80px;
+        }
+        
+        h1  {
+            width: 100%;
+        }
+        h3{
+            width: 72%;
+            margin-left: 15%;
+            font-size: 18px;
+        }
+        #h3{
+            width: 38%;
+            margin-left: 30%;
+            font-size: 18px;
+        }
+        .conteneur1{
+            width: 80%;
+            margin-left: 45%;
+        }
+        .conteneur1 a {
+            width: 80px;
+           
+    
+        }
+        .breakfast div img {
+            width: 50%;
+        }
+        hr {
+            margin-left: 40%;
+            width: 98%;
+        }
+        .CHAUDES_boisons{
+            width: 80%;
+            margin-top: 100px;
+            margin-left: 47%;
+        }
+        nav{
+            margin-right: -78%;
+        }
+        .CHAUDES_boisons div img {
+            width: 50%;
+            
+        }
+        header div img{
+            margin-left: 28%;
+        }
+    }
+    .nav_bar{
+        display: grid;
+        justify-content: center;
+        margin-left: -70%;
+    }
+    
+</style>
+<body>
+    <header>
+    <div class="justify-content-center"><img id="#img" src="LOGO1.jpg" alt=""></div>
+    <nav id="#" class="navbar bg-dark navbar-dark navbar-expand-sm nav_bar ">
+        <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#nav1">
+            Menu<span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">ACCEUIL</a></li>
+            <li class="nav-item"><a id="ABOUT" class="nav-link" href="index.html#a_propos">APROPOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="">CHAMBRES</a></li>
+            <li class="nav-item"><a class="nav-link" href="sevices.html">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#galerie">GALERIE</a></li>
+            <li class="nav-item"><a class="nav-link" href="activité.html">ACTIVITES</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
+            <li class="nav-item"><a id="reserve" class="nav-link" href="form login.html">Réserver</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+    
+    <aside>
+        <div class="conteneur">
+            <div class="slider-wrapper">
+                <div class="slider ">
+                    <img  id="slide1" src="img1.jpg" alt="">
+                
+                    <img id="slide2" src="img2.jpg" alt="">
+                
+                    <img  id="slide3" src="img3.jpg" alt="">
+                
+                    <img  id="slide4" src="img4.jpg" alt="">
+                
+                    <img  id="slide5" src="img5.jpg" alt="">
+                
+                    <img  id="slide6" src="img6.jpg" alt="">
+                </div>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+                <a href="#slide4"></a>
+                <a href="#slide5"></a>
+                <a href="#slide6"></a>
+            </div>
+        </div>
+    </aside>
+    <br>
+    <h1><img src="cloche.png"  style="width: 80px; height: 80px;">&nbsp;RESTAURANT&nbsp;<img src="restaurant.png"  style="width: 60px; height: 60px;" alt=""></h1>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div id="dv1" class="conteneur1">
+        <h3>&nbsp;.&nbsp;PETIT&nbsp;DEJEUNER&nbsp;.</h3>
+        <div class="breakfast">
+            <div>
+                <img src="brk1.jpg" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="brk2.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="brk3.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="brk4.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="brk5.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+        </div>
+        <div class="breakfast">
+            <div>
+                <img src="brk6.jpg" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="brk7.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="brk8.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="brk9.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="brk10.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+        </div>
+    
+        <h3 id="h3">.&nbsp;DINNER&nbsp;.</h3>
+        <div class="Dinner">
+            <div>
+                <img src="DN1.jpg" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="DN2.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="DN3.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="DN4.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="DN5.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+        </div>
+        <div class="Dinner">
+            <div>
+                <img src="DN6.jfif" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="DN7.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div> 
+                <img src="DN8.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="DN9.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+            <div>
+                <img src="DN10.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+            </div>
+        </div>
+        <a href="VOIRPLUS.html" id="voir_plus">VOIR&nbsp;PLUS&nbsp;<img src="voir-plus.png" style="width: 70px; height: 70px;" alt=""></a>
+    </div>
+    <h1  style="margin-left: 42%; margin-top: 40px;margin-bottom: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="cafe.png"  style="width: 60px; height: 60px; margin-top: -9px;" alt="">&nbsp;&nbsp;CAFE&nbsp;&nbsp;<img src="grains-de-cafe.png"  style="width: 50px; height: 50px;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    <br>
+    <br>
+    <hr style="margin-right: 37%;">
+    <main class="">
+        <article class="">
+            <div class="conteneur3">
+                <div class="plate"></div>
+                <div class="cup">
+                    <div class="top">
+                        <div class="vapeur">
+                            <span style="--i:1;"></span>
+                            <span style="--i:3;"></span>
+                            <span style="--i:16;"></span>
+                            <span style="--i:5;"></span>
+                            <span style="--i:13;"></span>
+                            <span style="--i:20;"></span>
+                            <span style="--i:6;"></span>
+                            <span style="--i:7;"></sp²an>
+                            <span style="--i:10;"></span>
+                            <span style="--i:8;"></span>
+                            <span style="--i:17;"></span>
+                            <span style="--i:11;"></span>
+                            <span style="--i:12;"></span>
+                            <span style="--i:14;"></span>
+                            <span style="--i:2;"></span>
+                            <span style="--i:9;"></span>
+                            <span style="--i:15;"></span>
+                            <span style="--i:4;"></span>
+                            <span style="--i:19;"></span>
+                        </div>
+                        <div class="circle">
+                            <div class="tea">
+
+                            </div> 
+                        </div>
+                        <div class="handle"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <br>
+        <div class="CHAUDES_boisons col-sm-12">
+            <h4 >.&nbsp;CHAUDES BOISONS&nbsp;.</h4>
+            <div class="CHAUDES">
+                <div>
+                    <img src="chb1.jfif" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="chb2.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="chb3.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="chb4.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="chb5.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+            </div>
+            <div class="CHAUDES">
+                <div>
+                    <img src="chb6.jfif" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="chb7.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="chb8.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="chb9.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="chb10.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+            </div>
+            <h5>.&nbsp;FROIDES BOISONS&nbsp;.</h5>
+            <div class="FROIDES">
+                <div>
+                    <img src="frb1.jfif" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="frb2.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="frb3.jpg" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="frb4.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="frb5.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+            </div>
+            <div class="FROIDES">
+                <div>
+                    <img src="frb6.jfif" style="width: 100px; height: 100px; margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="frb7.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div> 
+                    <img src="frb8.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="frb9.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+                <div>
+                    <img src="frb10.jfif" style="width: 100px; height: 100px;  margin-left: 3%;" alt="">
+                </div>
+
+            </div>
+            <a href="VOIRPLUS1.html" id="voir_plus">VOIR PLUS <img src="voir-plus.png" style="width: 70px; height: 70px;" alt=""></a>
+        </div>
+    </main>
+</body>
+</html>

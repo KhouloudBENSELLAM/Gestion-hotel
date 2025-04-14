@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        legend{
+            text-align: center;
+            font-size: 29px;
+            margin-bottom: 30px;
+            margin-top: 15px;
+            color: rgba(59, 44, 4, 0.826);
+
+        }
+        fieldset{
+            border: none;
+        }
+        form{
+           margin-left: 25%;
+           margin-right: 25%;
+           line-height: 24px;
+           margin-top: 50px;
+        }
+        input{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+        label{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Réservation</legend>
+            <label for="">Nom complet</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Entrer votre nom complet" required id="input">
+            <br>
+            <br>
+            <label for="">Date de naissance</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="input">
+            <br>
+            <br>
+            <label for="">Lieu de naissance</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="input">
+            <br>
+            <br>
+            <label for="">n° cin ou passport</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" required id="input">
+            <br>
+            <br>
+            <label for="marié">Vous etes marié ?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="marié" required id="input"><label for="">&nbsp;Oui</label> <input type="radio" name="marié" ><label for="">Non</label>
+            <br>
+            <br>
+            <label for="enfants">Vous avez d'enfants ?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="enfants" required id="input"><label for="">Oui</label> <input type="radio" name="enfants" ><label for="">Non</label>
+            <br>
+            <br>
+            <label for="">combien  d'enfants vous avez ?</label>&nbsp;
+            <input type="number" name="" required id="input">
+            <br>
+            <br>
+            <label for="">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="saisir votre email" required id="input">
+            <br>
+            <br>
+            <label for="">Tel</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="tel" placeholder="saisir votre numero de téléphone" required id="input">
+            <br>
+            <br>
+            <label for="">Date&nbsp;d'arriver</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="input"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="">l'heure&nbsp;d'arriver</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="time" id="input" >
+            <br>
+            <br>
+            <label for="">Date&nbsp;de&nbsp;departure</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="input"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="">l'heure&nbsp;de&nbsp;departure</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" id="input">
+            <br>
+            <br>
+            <br>
+            <button id="btn"><a style="text-decoration: none; color:white" href="mode paiment .html">Réserver</a></button>
+        </fieldset>
+    </form>
+</body>
+</html>
